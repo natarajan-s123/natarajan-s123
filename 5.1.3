@@ -1,0 +1,23 @@
+import sys
+
+n = int(input("Enter no.of elements: "))
+arr = [0] * (n + 1)
+
+for i in range(1, n + 1):
+    arr[i] = int(input(f"Enter element {i}: "))
+
+large = arr[1]
+small = arr[1]
+
+for i in range(1, n + 1):
+    if arr[i] > large:
+        large = arr[i]
+    if arr[i] < small:
+        small = arr[i]
+
+print(f"Largest element: {large}")
+print(f"Smallest element: {small}")
+
+sys.exit(0)
+
+
