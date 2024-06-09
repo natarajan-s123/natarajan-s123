@@ -1,0 +1,9 @@
+l=[]
+n=int(input("Enter size of an array:"))
+print("Enter",n,"elements")
+for i in range(n):
+    k=int(input())
+    l.append(k)
+P=int(input("Enter search key:"))
+if P in l:
+    print(P,"found at position",l.index(P))
