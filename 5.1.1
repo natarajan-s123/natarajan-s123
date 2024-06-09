@@ -1,0 +1,14 @@
+import sys
+
+def main():
+    arr = [0] * 8
+    n = int(input("Enter size: "))
+    print("Enter elements: ", end="")
+    arr[:n] = [int(x) for x in input().split()]
+    print("The elements of array: ", end="")
+    print(*arr[:n])
+
+if __name__ == "__main__":
+    main()
+
+
