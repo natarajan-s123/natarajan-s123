@@ -1,0 +1,21 @@
+import math
+
+size = int(input("Enter array size : "))
+if size <= 0:
+    print("Invalid input")
+    exit()
+
+max_non_square = -1
+print("Enter array elements : ", end="")
+for i in range(size):
+    num = int(input())
+    sqrt_num = int(math.sqrt(num))
+    if sqrt_num * sqrt_num != num and num > max_non_square:
+        max_non_square = num
+
+if max_non_square == 1:
+    print(max_non_square)
+else:
+    print(max_non_square)
+
+
