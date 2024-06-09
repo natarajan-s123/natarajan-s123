@@ -1,0 +1,10 @@
+input_string = input("Enter the input string: ")
+output_string = ""
+for char in input_string:
+    if 'A' <= char <= 'Z':
+        output_string += chr(ord(char) + 32)
+    else:
+        output_string += char
+print("The output string:", output_string)
+
+
